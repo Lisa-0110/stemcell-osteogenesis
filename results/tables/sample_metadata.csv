@@ -1,0 +1,7 @@
+"sample_id","title","treatment","condition","donor","replicate_independence"
+"GSM5395968","RNA-seq control_1","treatment: day 0 of osteogenic induction","Day0",,"Not established in GEO metadata"
+"GSM5395969","RNA-seq control_2","treatment: day 0 of osteogenic induction","Day0",,"Not established in GEO metadata"
+"GSM5395970","RNA-seq control_3","treatment: day 0 of osteogenic induction","Day0",,"Not established in GEO metadata"
+"GSM5395971","RNA-seq exp_1","treatment: day 21 of osteogenic induction","Day21",,"Not established in GEO metadata"
+"GSM5395972","RNA-seq exp_2","treatment: day 21 of osteogenic induction","Day21",,"Not established in GEO metadata"
+"GSM5395973","RNA-seq exp_3","treatment: day 21 of osteogenic induction","Day21",,"Not established in GEO metadata"

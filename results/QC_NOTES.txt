@@ -1,0 +1,8 @@
+GSE178679: descriptive RNA-seq QC completed.
+Genes: 39376 | retained (CPM >= 1 in >= 3 samples): 15562
+No differential-expression tests were performed.
+No samples were automatically removed.
+Donor independence, pooling and pairing require clarification before confirmatory inference.
+Day0 vs Day21 also differs in culture time; not an isolated treatment effect.
+CPM plots and PCA are exploratory, not DESeq2 results.
+Count-level QC does not establish read quality, mapping rate or contamination status.
