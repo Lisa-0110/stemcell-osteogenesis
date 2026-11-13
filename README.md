@@ -12,7 +12,7 @@ This is an exploratory secondary analysis of public data, not a new laboratory e
 
 GEO accession: [GSE178679](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE178679).
 
-The included count matrix is the **NCBI-generated** GRCh38.p13 gene-level count matrix, not the authors' supplementary count matrix. It contains 39,376 unique GeneIDs and six RNA-seq libraries. The annotation matches all count rows. The six additional miRNA libraries in the GEO series are excluded.
+The count matrix used in this analysis is the **NCBI-generated** GRCh38.p13 gene-level count matrix, not the authors' supplementary count matrix. It contains 39,376 unique GeneIDs and six RNA-seq libraries. The annotation matches all count rows. The six additional miRNA libraries in the GEO series are excluded.
 
 | Condition | GEO samples | Libraries |
 |---|---|---|
@@ -23,9 +23,18 @@ The included count matrix is the **NCBI-generated** GRCh38.p13 gene-level count 
 
 ## Run
 
-1. Extract this ZIP into one folder.
-2. Open `stemcell-osteogenesis.Rproj` in RStudio.
-3. Run in the Console:
+1. Download this repository as a ZIP and extract it.
+2. In the extracted project folder, create a `data` folder and a `raw` folder inside it (`data/raw/`).
+3. Download these three files from the [GEO download page for GSE178679](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE178679). Place them in `data/raw/` and rename them as shown below. Keep them compressed.
+
+   | File on GEO | Save as |
+   | --- | --- |
+   | `GSE178679_raw_counts_GRCh38.p13_NCBI.tsv.gz` | `counts.tsv.gz` |
+   | `Human.GRCh38.p13.annot.tsv.gz` | `annotation.tsv.gz` |
+   | `GSE178679_series_matrix.txt.gz` | `series_matrix.txt.gz` |
+
+4. Open `stemcell-osteogenesis.Rproj` in RStudio.
+5. Run the command below in the RStudio Console:
 
 ```r
 source("run_sensitivity.R")
